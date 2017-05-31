@@ -1,6 +1,6 @@
-# shopManager
+# ShopManager
 Restful api to fetch/create shop details.
-Shop Manager API documentation
+Shop Manager API documentation (https://docs.google.com/document/d/1kOqKVHhYQ9TRReQBwfVZq1bdvkqQGDNUmoySOzupvUs/edit?usp=sharing)
  
 API endpoint :  http://localhost:8080/ShopmanagerRestApi/api/
  
@@ -12,11 +12,11 @@ Get all managers
 Search nearby shop using user location (lat, long)
  
  
-Create shop (End point : /shop/{force} ):
-	   Api end point  : http://localhost:8080/ShopmanagerRestApi/api/shop/{force}
-	   	
-	  {force} : This parameter can have boolean value like true and false.
-	 	    if value is true, code will update shop even if shop is already created by some other manager else an error message will be generated that shop is already created.
+Create shop (End point : /shop/{force} )
+Api end point  : http://localhost:8080/ShopmanagerRestApi/api/shop/{force}
+```
+{force} : This parameter can have boolean value like true and false.
+	if value is true, code will update shop even if shop is already created by some other manager else an error message will be generated that shop is already created.
 	E.g. : Create a new shop : 
 End point  : http://localhost:8080/ShopmanagerRestApi/api/shop/false
 Method : Post
@@ -46,7 +46,7 @@ Body :
     }
   }
 }
- 
+``` 
 IF shop is already existed with same name :
 Response :
 {
@@ -266,4 +266,6 @@ Default radius will be 10 if not given.
  
  
 	
+ 
+
  
